@@ -8,5 +8,5 @@ Step 5 -C:\> MKDIR terraform
         C:\> CD terraform
 Step 6 - unzip the file and paste it to the terraform folder
 Step 7 - install Chocolatey: Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-Step 8 - choco install terraform
+Step 8 - C:\> choco install terraform
 Step 9 - terraform version  

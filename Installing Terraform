@@ -1,0 +1,12 @@
+To install Terraform on a windows machine:-
+
+Step 1 - Open powershell
+Step 2 - Download the .exe file for the windows machine from the terraform official website Link-https://developer.hashicorp.com/terraform/downloads?product_intent=terraform
+Step 3 - Download the Zip file 
+Step 4 - Open the powershell terminal on windows 
+Step 5 -C:\> MKDIR terraform
+        C:\> CD terraform
+Step 6 - unzip the file and paste it to the terraform folder
+Step 7 - install Chocolatey: Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+Step 8 - choco install terraform
+Step 9 - terraform version  

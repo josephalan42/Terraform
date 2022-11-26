@@ -1,0 +1,16 @@
+Step 1 - Open the base.tf flie.
+Step 2 - Add the following config.
+
+config-
+
+resource "aws_instance" "base2" {
+ami = "ami-0d729a60"
+instance_type = "t2.micro"
+}
+resource "aws_eip" "base2" {
+instance = "${aws_instance.base.id}"
+}
+
+Step 3 - run the terraform plan command 
+Step 4 - run the terraform apply command, wait for the instances to start up.
+Step 5 - check the AWS management console to view the instances which are up and running.

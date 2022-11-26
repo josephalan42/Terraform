@@ -1,0 +1,23 @@
+Step 1 - Create a new .tf flie using git bash terminal
+Step 2 - Add the desired EC2 config to the .tf file using a text editor
+Config File - 
+/* This is a multi-line comment. This is a multi-line comment.
+This is a multi-line comment. This is a multi-line comment. This
+is a multi-line comment. This is a multi-line comment. */
+provider "aws" {
+access_key = "abc123"
+secret_key = "abc123"
+region = "us-east-1"
+}
+# This is a single-line comment.
+resource "aws_instance" "base" {
+ami = "ami-0d729a60"
+instance_type = "t2.micro"
+}
+
+Step 4 - for the access and secret key go to the aws management console and generate it and download the .csv file and copy paste the credentials accordingly.
+Step 5 - Open Powershell
+Step 6 - go to the directory where the .tf file is present.
+Step 7 - run the terraform plan command.
+Step 8 - and apply the proposed settings by running the terraform apply command.
+Step 9 - wait for sometime and check your aws management console your ec2 instance must be up and running successfully. 

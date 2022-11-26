@@ -1,0 +1,4 @@
+Step 1 - terraform graph > base.dot 
+Step 2 - open the base.dot file and copy the text
+Step 3 - visit webgraphviz website and paste the text
+Step 4 - read and analyze the graph

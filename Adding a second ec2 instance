@@ -8,7 +8,7 @@ ami = "ami-0d729a60"
 instance_type = "t2.micro"
 }
 resource "aws_eip" "base2" {
-instance = "${aws_instance.base.id}"
+instance = "${aws_instance.base2.id}"
 }
 
 Step 3 - run the terraform plan command 
